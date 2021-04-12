@@ -1,0 +1,31 @@
+body {
+    border: 0 !important;
+    padding: 0 !important;
+  }
+  .WrapperSito {
+    background-color: antiquewhite;
+    height: 100%;
+    width: 100%;
+  }
+  .BarraSuperiore {
+    background-color: black;
+    overflow: hidden;
+  }
+  .BarraSuperiore a { 
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
+    font-size: 15px;
+  }
+  .BarraSuperiore a:hover {
+    background-color: white;
+    color: black;
+  }
+  .TitoloSpiegazione {
+    height: 40%;
+    width: 65%;
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+    text-align: justify;
+  }
