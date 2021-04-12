@@ -17,13 +17,14 @@ body {
   text-align: center;
   padding: 15px 15px;
   font-size: 15px;
+  text-decoration: none;
 }
 .BarraSuperiore a:hover {
   background-color: white;
   color: black;
 }
 .TitoloSpiegazione {
-  margin-top: 10%;
+  padding-top: 5%;
   height: 40%;
   width: 65%;
   font-family:'Times New Roman', Times, serif;
