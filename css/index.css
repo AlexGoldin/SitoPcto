@@ -32,5 +32,8 @@ body {
   text-align: justify;
 }
 .Immagine {
-  border: 1px solid;
+    height: 190px;
+    float: right;
+    border-radius: 8px;
+    margin: 5px;;
 }
