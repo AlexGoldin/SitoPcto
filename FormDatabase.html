@@ -7,34 +7,42 @@
   <body>
     <div class="Wrapper">
     <div class=BarraLaterale>
-      <Button id="ButtonViewEdifici"> Form Edifici </Button> <br>
-      <Button id="ButtonViewMonumenti"> Form Monumenti </Button> <br>
-      <Button id="ButtonViewPiazze"> Form Piazze </Button> <br>
-      <Button id="ButtonViewReperti"> Form Reperti </Button> <br>
-      <Button id="ButtonViewStatue"> Form Statue </Button> <br>
-      <Button id="ButtonViewStrade"> Form Strade </Button>
+      <Button class="Button" id="ButtonViewEdifici"> Form Edifici </Button>
+      <Button class="Button" id="ButtonViewMonumenti"> Form Monumenti </Button>
+      <Button class="Button" id="ButtonViewPiazze"> Form Piazze </Button>
+      <Button class="Button" id="ButtonViewReperti"> Form Reperti </Button>
+      <Button class="Button" id="ButtonViewStatue"> Form Statue </Button>
+      <Button class="Button" id="ButtonViewStrade"> Form Strade </Button>
     </div>
 
     <div id="InsiemePagine">
       <div id="Edifici">
         <form>
         <div class="form-group">
+          <input type="text" class="form-control" id="Codice" placeholder="Inserire il codice dell'edificio">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="Coordinate" placeholder="Inserire le coordinate dell'edificio">
+        </div>
+        <div class="form-group">
           <input type="text" class="form-control" id="Nome" placeholder="Inserire il nome dell'edificio">
         </div>
         <div class="form-group">
-          <input type="text" class="form-control" id="Descrizione" placeholder="Inserire la descrizione dell'edificio">
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control" id="Periodo" placeholder="Inserire il periodo dell'edificio">
+            <input type="text" class="form-control" id="Periodo" placeholder="Inserire il periodo dell'edificio">
         </div>
         <div class="form-group">
           <input type="text" class="form-control" id="Materiali" placeholder="Inserire i materiali dell'edificio">
         </div>
-        <div class="form-group">
-          <input type="text" class="form-control" id="Date" placeholder="Inserire le date di realizzazione dell'edificio">
+          <input type="text" class="form-control" id="Descrizione" placeholder="Inserire la descrizione dell'edificio">
         </div>
         <div class="form-group">
-          <input type="text" class="form-control" id="Edificio" placeholder="Inserisci il nome dell'edificio">
+          <input type="text" class="form-control" id="Costruzione" placeholder="Inserire le date di realizzazione dell'edificio">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="Bibliografia" placeholder="Inserire la bibliografia dell'edificio">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="Restaurazioni" placeholder="Inserire le date di restaurazione dell'edificio">
         </div>
         </form>
       </div>
