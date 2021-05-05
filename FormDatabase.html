@@ -2,10 +2,37 @@
 <html>
   <head>
     <link rel="stylesheet" href="css/form.css">
+    <script src="JS/View.js"></script>
   </head>
   <body>
-    <form>
-      
-    </form>
+    <div class=BarraLaterale>
+      <Button id="ButtonViewEdifici" data-launch-view="Edifici"> Form Edifici </Button>
+      <Button id="ButtonViewMonumenti" data-launch-view="Monumenti"> Form Edifici </Button>
+      <Button id="ButtonViewPiazze" data-launch-view="Piazze"> Form Edifici </Button>
+      <Button id="ButtonViewReperti" data-launch-view="Reperti"> Form Edifici </Button>
+      <Button id="ButtonViewStatue" data-launch-view="Statue"> Form Edifici </Button>
+      <Button id="ButtonViewStrade" data-launch-view="Strade"> Form Edifici </Button>
+    </div>
+
+    <div id="InsiemePagine">
+      <div class="view" id="Edifici">
+        <p>a</p>
+      </div>
+      <div class="view hide" id="Monumenti">
+        <p>b</p>
+      </div>
+      <div class="view hide" id="Piazze">
+        <p>c</p>
+      </div>
+      <div class="view hide" id="Reperti">
+        <p>d</p>
+      </div>
+      <div class="view hide" id="Statue">
+        <p>e</p>
+      </div>
+      <div class="view hide" id="Strade">
+        <p>f</p>
+      </div>
+    </div>
   </body>
 </html>
