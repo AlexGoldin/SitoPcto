@@ -9,10 +9,14 @@ body {
     display: flex;
     flex-direction:column;
     align-items: stretch;
+    float:left;
+}
+.InsiemePagine {
+    margin-left:20%;
 }
 .Wrapper {
-    
+    margin:auto;
 }
 .Button {
-
+    
 }
