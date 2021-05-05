@@ -1,13 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic);
 
-$jumbotron-text-white: white;
-$textDarkColor: #676a6c;
-$textLightColor: #a0a5a8;
-$progress-green: #49d560;
-$light-blue: #00acee;
-$red: #eb4d5c;
-$about-section-heading-blue: #074e8c;
-
 // BASE STYLES (not specific to this page)
 .product-navbar {
     height: 40px;
@@ -280,13 +272,13 @@ $about-section-heading-blue: #074e8c;
             }
 
             h3 {
-                color: $about-section-heading-blue;
+                color: #074e8c;
             }
 
             p {
                 font-size: 15px;
                 margin-top: 20px;
-                color: $textDarkColor;
+                color: #676a6c;
               
                 @media (max-width:640px) {
                     font-size: 13px;
@@ -300,7 +292,7 @@ $about-section-heading-blue: #074e8c;
                 li {
                     line-height: 25px;
                     padding-left: 5px;
-                    color: $textDarkColor;
+                    color: #676a6c;
                 }
             }
         }
