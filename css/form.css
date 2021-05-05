@@ -5,8 +5,13 @@ body {
 }
 .BarraLaterale {
     background-color: #362e41;
-    width: "150px";
+    width: 100px;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+}
+.Wrapper {
+    display: flex;
     align-items: flex-start;
 }

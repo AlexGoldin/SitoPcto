@@ -5,6 +5,7 @@
     <script src="JS/View.js" defer async></script>
   </head>
   <body>
+    <div class="Wrapper">
     <div class=BarraLaterale>
       <Button id="ButtonViewEdifici"> Form Edifici </Button> <br>
       <Button id="ButtonViewMonumenti"> Form Monumenti </Button> <br>
@@ -17,11 +18,9 @@
     <div id="InsiemePagine">
       <div id="Edifici">
         <form>
-          <div class="form-group row">
-            <div class="col-sm-10">
-              <input type="text" readonly class="form-control-plaintext" id="Edificio" value="a">
-            </div>
-          </div>
+        <div class="form-group">
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
         </form>
       </div>
       <div id="Monumenti" style="display: none;">
@@ -40,5 +39,6 @@
         <p>f</p>
       </div>
     </div>
+  </div>
   </body>
 </html>
