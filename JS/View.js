@@ -1,14 +1,17 @@
-$(document).ready(function (e) {
-
-    function showView(viewName) {
-        $('.view').hide();
-$('#' + viewName).show();
+document.getElementById('ButtonViewEdifici').onclick = () => {
+    document.getElementById('Edifici').style.display = "content"
+    document.getElementById('Monumenti').style.display = "none"
+    document.getElementById('Piazze').style.display = "none"
+    document.getElementById('Reperti').style.display = "none"
+    document.getElementById('Statue').style.display = "none"
+    document.getElementById('Strade').style.display = "none"
 }
 
-    $('[data-launch-view]').click(function (e) {
-        e.preventDefault();
-        var viewName = $(this).attr('data-launch-view');
-        showView(viewName);
-    });
-
-});
+document.getElementById('ButtonViewEdifici').onclick = () => {
+    document.getElementById('Edifici').style.display = "none"
+    document.getElementById('Monumenti').style.display = "content"
+    document.getElementById('Piazze').style.display = "none"
+    document.getElementById('Reperti').style.display = "none"
+    document.getElementById('Statue').style.display = "none"
+    document.getElementById('Strade').style.display = "none"
+}
