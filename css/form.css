@@ -1,10 +1,12 @@
 body {
-    background: #584b69;
+    background: white;
     border: 0 !important;
     padding: 0 !important;
 }
 .BarraLaterale {
-    background-color: #362e41;
+    background-color: black;
+    border: 0 !important;
+    padding: 0 !important;
     width: 100px;
     height: 100%;
     display: flex;
