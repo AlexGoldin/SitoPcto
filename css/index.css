@@ -32,6 +32,7 @@ body {
   text-align: justify;
 }
 .Immagine {
+    padding-right: 5mm;
     height: 300px;
     float: right;
     border-radius: 8px;
