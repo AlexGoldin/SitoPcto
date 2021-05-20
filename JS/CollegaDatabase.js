@@ -1,5 +1,5 @@
 import { Client } from 'pg';
-var connectionString = "postgres://ijhvjdgf:q2LjmBeKdDKD-ovwgkkJexd-cVys6OhX@tai.db.elephantsql.com:5432/ijhvjdgf";
+var connectionString = "postgres://tommaso_cattaneo: tommicatt21@postgresql-tommaso.alwaysdata.net:5432/tommaso_cattaneo";
 var pgClient = new Client(connectionString);
 pgClient.connect().then(() => Console.log("Funziona"));
 
