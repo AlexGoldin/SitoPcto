@@ -28,14 +28,13 @@ body {
 .TitoloSpiegazione {
   padding-top: 5%;
   height: 40%;
-  width: 65%;
+  width: 45%;
   font-family:'Times New Roman', Times, serif;
   color: black;
   text-align: justify;
 }
 .Immagine {
-  padding-right: 5%;
   height: 300px;
-  float: right;
-  margin: 5px;;
+  position: fixed;
+  margin-left: 65%;
 }
