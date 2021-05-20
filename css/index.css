@@ -3,7 +3,7 @@ body {
   padding: 0 !important;
 }
 .WrapperSito {
-  background-color: #584b69;
+  background-color: white;
   height: 100%;
   width: 100%;
 }
@@ -32,7 +32,7 @@ body {
   text-align: justify;
 }
 .Immagine {
-    height: 190px;
+    height: 300px;
     float: right;
     border-radius: 8px;
     margin: 5px;;

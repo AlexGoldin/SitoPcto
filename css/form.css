@@ -15,9 +15,6 @@ body {
 .InsiemePagine {
     padding-top:50px; 
 }
-.Wrapper {
-        
-}
 .Button {
     position: relative;
     width: 100%;
@@ -28,7 +25,19 @@ body {
     background: #2c3e50;
     border: 0;
 }
-
+.input {
+    font-family: "Times New Roman";
+    font-size: 16px;
+    font-style: normal;
+}
+.section {
+    background-color: white;
+    width: 95%;
+    margin-right: 30%;
+    padding: 1%;
+    margin-left: 5;
+    height: 700px
+}
 .Button:hover {
   background:#1d2833;
 }
