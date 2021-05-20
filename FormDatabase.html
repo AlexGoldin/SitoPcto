@@ -5,6 +5,14 @@
     <script src="JS/View.js" defer async></script>
   </head>
   <body>
+    <div class="BarraSuperiore">
+      <a href="https://alexgoldin.github.io/SitoPcto/"> Home </a>
+      <a href="Gis"> Mappa </a>
+      <a href="Timeline"> Timeline </a>
+      <a href="FormDatabase"> Contribuisci al Database </a>
+      <a href="About"> About </a>
+      <a href="ContactUs"> Contact Us </a>
+    </div>
     <div class="Wrapper">
     <div class=BarraLaterale>
       <Button class="Button" id="ButtonViewEdifici"> Form Edifici </Button>
@@ -15,142 +23,90 @@
       <Button class="Button" id="ButtonViewStrade"> Form Strade </Button>
     </div>
 
-    <div class="InsiemePagine">
+    <div class="InsiemePagine">      
       <div id="Edifici">
-        <form>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Codice" placeholder="Inserire il codice dell'edificio">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Coordinate" placeholder="Inserire la latitudine dell'edificio">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Coordinate1" placeholder="Inserire la longitudine dell'edificio">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Nome" placeholder="Inserire il nome dell'edificio">
-          </div>
-          <div class="form-group">
-              <input type="text" class="form-control" id="Periodo" placeholder="Inserire il periodo dell'edificio">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Materiali" placeholder="Inserire i materiali dell'edificio">
-          </div>
-            <input type="text" class="form-control" id="Descrizione" placeholder="Inserire la descrizione dell'edificio">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Costruzione" placeholder="Inserire le date di realizzazione dell'edificio">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Bibliografia" placeholder="Inserire la bibliografia dell'edificio">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Restaurazioni" placeholder="Inserire le date di restaurazione dell'edificio">
-          </div>
+        <form >
+              <input type="text" size="40" class="form-control" name="nome" id="Codice" placeholder="Codice">
+              <input type="text" size="40" class="form-control" id="Latitudine" placeholder="Latitudine">
+              <input type="text" size="40" class="form-control" id="Longitudine" placeholder="Longitudine">
+              <input type="text" size="40" class="form-control" id="Nome" placeholder="Nome">
+              <input type="text" size="40" class="form-control" id="Periodo" placeholder="Periodo">
+              <input type="text" size="40" class="form-control" id="Materiali" placeholder="Materiali">
+              <input type="text" size="40" class="form-control" id="Descrizione" placeholder="Descrizione">
+              <input type="text" size="40" class="form-control" id="Costruzione" placeholder="Data di realizzazione">
+              <input type="text" size="40" class="form-control" id="Bibliografia" placeholder="Bibliografia">
+              <input type="text" size="40" class="form-control" id="Restaurazioni" placeholder="Data di restaurazione">
         </form>
-      </div>
+      <div>
       <div id="Monumenti" style="display: none;">
         <form>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Codice" placeholder="Inserire il codice del monumento">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Coordinate" placeholder="Inserire la latitudine del monumento">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Coordinate1" placeholder="Inserire la longitudine del monumento">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Tipologia" placeholder="Inserire la tipologia del monumento">
-          </div>
-          <div class="form-group">
-              <input type="text" class="form-control" id="Periodo" placeholder="Inserire il periodo del monumento">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Autore" placeholder="Inserire l'autore del monumento">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Materiali" placeholder="Inserire i materiali del monumento">
-          </div>
-            <input type="text" class="form-control" id="Descrizione" placeholder="Inserire la descrizione del monumento">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Apertura" placeholder="Inserire le date di apertura del monumento">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Stato_Conservazione" placeholder="Inserire lo stato di conservazione del monumento">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Bibliografia" placeholder="Inserire la bibliografia del monumento">
-          </div>
+          <input type="text" size="40" class="form-control" id="Codice1" placeholder="Codice">
+          <input type="text" size="40" class="form-control" id="Latitudine1" placeholder="Latitudine">
+          <input type="text" size="40" class="form-control" id="Longitudine1" placeholder="Longitudine">
+          <input type="text" size="40" class="form-control" id="Tipologia1" placeholder="Tipologia">
+          <input type="text" size="40" class="form-control" id="Periodo1" placeholder="Periodo">
+          <input type="text" size="40" class="form-control" id="Autore1" placeholder="Autore">
+          <input type="text" size="40" class="form-control" id="Materiali1" placeholder="Materiali">
+          <input type="text" size="40" class="form-control" id="Descrizione1" placeholder="Descrizione">
+          <input type="text" size="40" class="form-control" id="Apertura1" placeholder="Data di apertura">
+          <input type="text" size="40" class="form-control" id="Stato_Conservazione1" placeholder="Stato di conservazione">
+          <input type="text" size="40" class="form-control" id="Bibliografia1" placeholder="Bibliografia">
         </form>
       </div>
       <div id="Piazze" style="display: none;">
         <form>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Codice" placeholder="Inserire il codice della strada">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Coordinate" placeholder="Inserire la latitudine della strada">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Coordinate1" placeholder="Inserire la longitudine della strada">
-          </div>
-          <div class="form-group">
-              <input type="text" class="form-control" id="Periodo" placeholder="Inserire il periodo della strada">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Materiali" placeholder="Inserire i materiali della strada">
-          </div>
-            <input type="text" class="form-control" id="Descrizione" placeholder="Inserire la descrizione della strada">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Costruzione" placeholder="Inserire le date di costruzione di apertura della strada">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Bibliografia" placeholder="Inserire la bibliografia della strada">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Restaurazioni" placeholder="Inserire le date di restaurazione della strada">
-          </div>
+          <input type="text" size="40" class="form-control" id="Codice2" placeholder="Codice">
+          <input type="text" size="40" class="form-control" id="Latitudine2" placeholder="Latitudine">
+          <input type="text" size="40" class="form-control" id="Longitudine2" placeholder="Longitudine">
+          <input type="text" size="40" class="form-control" id="Periodo2" placeholder="Periodo">
+          <input type="text" size="40" class="form-control" id="Materiali2" placeholder="Materiali">
+          <input type="text" size="40" class="form-control" id="Descrizione2" placeholder="Descrizione">
+          <input type="text" size="40" class="form-control" id="Costruzione2" placeholder="Data di costruzione">
+          <input type="text" size="40" class="form-control" id="Bibliografia2" placeholder="Bibliografia">
+          <input type="text" size="40" class="form-control" id="Restauro2" placeholder="Data di restauro">
         </form>
-      </div>
+      <div>
       <div id="Reperti" style="display: none;">
         <form>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Codice" placeholder="Inserire il codice del reperto">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Coordinate" placeholder="Inserire la latitudine del reperto">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Coordinate1" placeholder="Inserire la longitudine del reperto">
-          </div>
-          <div class="form-group">
-              <input type="text" class="form-control" id="Periodo" placeholder="Inserire il periodo del reperto">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Museo" placeholder="Inserire il museo dove si trova il reperto">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Autore" placeholder="Inserire l'autore del reperto">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Materiali" placeholder="Inserire i materiali del reperto">
-          </div>
-            <input type="text" class="form-control" id="Descrizione" placeholder="Inserire la descrizione del reperto">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Stato_Conservazione" placeholder="Inserire lo stato di conservazione del reperto">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="Bibliografia" placeholder="Inserire la bibliografia del reperto">
-          </div>
+          <input type="text" size="40" class="form-control" id="Codice3" placeholder="Codice">
+          <input type="text" size="40" class="form-control" id="Latitudine3" placeholder="Latitudine">
+          <input type="text" size="40" class="form-control" id="Longitudine3" placeholder="Longitudine">
+          <input type="text" size="40" class="form-control" id="Periodo3" placeholder="Periodo">
+          <input type="text" size="40" class="form-control" id="Museo3" placeholder="Museo">
+          <input type="text" size="40" class="form-control" id="Autore3" placeholder="Autore">
+          <input type="text" size="40" class="form-control" id="Materiali3" placeholder="Materiali">
+          <input type="text" size="40" class="form-control" id="Descrizione3" placeholder="Descrizione">
+          <input type="text" size="40" class="form-control" id="Conservazione3" placeholder="Stato di conservazione">
+          <input type="text" size="40" class="form-control" id="Bibliografia3" placeholder="Bibliografia">
         </form>
       </div>
       <div id="Statue" style="display: none;">
+        <form>
+          <input type="text" size="40" class="form-control" id="Codice3" placeholder="Codice">
+          <input type="text" size="40" class="form-control" id="Latitudine3" placeholder="Latitudine">
+          <input type="text" size="40" class="form-control" id="Longitudine3" placeholder="Longitudine">
+          <input type="text" size="40" class="form-control" id="Periodo3" placeholder="Periodo">
+          <input type="text" size="40" class="form-control" id="Museo3" placeholder="Museo">
+          <input type="text" size="40" class="form-control" id="Autore3" placeholder="Autore">
+          <input type="text" size="40" class="form-control" id="Materiali3" placeholder="Materiali">
+          <input type="text" size="40" class="form-control" id="Descrizione3" placeholder="Descrizione">
+          <input type="text" size="40" class="form-control" id="Conservazione3" placeholder="Stato di conservazione">
+          <input type="text" size="40" class="form-control" id="Bibliografia3" placeholder="Bibliografia">
+        </form>
       </div>
       <div id="Strade" style="display: none;">
+        <form>
+          <input type="text" size="40" class="form-control" id="Codice3" placeholder="Codice">
+          <input type="text" size="40" class="form-control" id="Latitudine3" placeholder="Latitudine">
+          <input type="text" size="40" class="form-control" id="Longitudine3" placeholder="Longitudine">
+          <input type="text" size="40" class="form-control" id="Periodo3" placeholder="Periodo">
+          <input type="text" size="40" class="form-control" id="Museo3" placeholder="Museo">
+          <input type="text" size="40" class="form-control" id="Autore3" placeholder="Autore">
+          <input type="text" size="40" class="form-control" id="Materiali3" placeholder="Materiali">
+          <input type="text" size="40" class="form-control" id="Descrizione3" placeholder="Descrizione">
+          <input type="text" size="40" class="form-control" id="Conservazione3" placeholder="Stato di conservazione">
+          <input type="text" size="40" class="form-control" id="Bibliografia3" placeholder="Bibliografia">
+        </form>
       </div>
     </div>
   </div>
