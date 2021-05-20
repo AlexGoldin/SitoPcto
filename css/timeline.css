@@ -1,113 +1,128 @@
-body {
-  font-family: 'Source Sans Pro',Helvetica Neue,Helvetica,Arial,sans-serif; 
-  font-size: 16px;
-  line-height: 1.75;
-}
-
-#timeline {
-  display: flex;
-  background-color: #031625;
-}
-#timeline .tl-item :hover{
-      width: 23.3333%;
-}
-
-.tl-item {
-  transform: translate3d(0, 0, 0);
-  position: relative;
-  width: 25%;
-  height: 100vh;
-  min-height: 600px;
-  color: #fff;
+body{
   overflow: hidden;
-  transition: width 0.5s ease;
+  padding: 0;
+  margin: 0;
+  transition: all 1s ease;
 }
-  
-
-  .tl-item:after {
-    background: transparentize(#031625, 0.15);
-    opacity: 1;
-    transition: opacity 0.5s ease;
-  }
-
-  .tl-item:before {
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 75%);
-    z-index: 1;
-    opacity: 0;
-    transform: translate3d(0, 0, 0) translateY(50%);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  }
-
-  .tl-item:hover {
-    width: 30% !important;
-  }
-    .tl-item:after {
-      opacity: 0;
-    }
-
-    .tl-item:before {
-      opacity: 1;
-      transform: translate3d(0, 0, 0) translateY(0);
-      transition: opacity 1s ease, transform 1s ease 0.25s;
-    }
-    
-    .tl-content {
-      opacity: 1;
-      transform: translateY(0);
-      transition: all 0.75s ease 0.5s;
-    }
-
-    .tl-bg {
-      filter: grayscale(0);
-    }
-
-.tl-item :before, :after {
-    transform: translate3d(0, 0, 0);
-    content: '';
-    position: absolute;
-    left: 0; top: 0;
-    width: 100%; height: 100%;
-  }
-
-.tl-content {
-  transform: translate3d(0, 0, 0) translateY(25px);
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  margin: 0 1.618em;
-  top: 55%;
-  opacity: 0;
-}
-  h1 {
-    font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
-    text-transform: uppercase;
-    color: #1779cf;
-    font-size: 1.44rem;
-    font-weight: normal;
-  }
-
-.tl-year {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  z-index: 1;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-}
-  p {
-    font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-size: 1.728rem;
-    line-height: 0;
-  }
-
-.tl-bg {
-  transform: translate3d(0, 0, 0);
-  position: absolute;
-  width: 100%; height: 100%;
-  top: 0; left: 0;
+body{
+    background: url('http://extrawall.net/images/wallpapers/378_1920x1080_abstract_city.jpg') no-repeat fixed center;
   background-size: cover;
-  background-position: center center;
-  transition: filter 0.5s ease;
-  filter: grayscale(100%);
+}
+
+body::before{
+  content: '';
+  background: rgba(0,0,0,0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.timeline{
+  position: absolute;
+  bottom: 0;
+  top: 100;
+  width: 3000px;
+  height: 50px;
+  background: rgba(0,0,0,0.5);
+  border-top: 1px solid #fff;
+  padding-left: 80px;
+}
+
+.date{
+  color: #fff;
+  float: left;
+  width: 150px;
+  height: 50px;
+  /*padding-left: 80px;*/
+}
+.date::before{
+  content: '';
+  position: absolute;
+  height: 100vh;
+  width: 1px;
+  background: rgba(255,255,255,0.7);
+  background: -webkit-linear-gradient(top,rgba(0,0,0,0.5),rgba(0,0,0,1)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(bottom,rgba(0,0,0,0.5),rgba(0,0,0,1)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(bottom,rgba(0,0,0,0.5),rgba(0,0,0,1)); /*Fx 3.6-15*/
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(255,255,255,1)); /*Standard*/
+  margin-top: -100vh;
+}
+p.focus{
+  position: absolute;
+  top: 0;
+  margin-left: -14px;
+  padding-top: 10px;
+}
+p.focus::before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: 3.5px;
+}
+
+p.focus::after{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  top: -5px;
+  left: 9px;
+}
+
+.goal_wrap{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 50px;
+  top:-100px;
+  margin-left: -24px;
+  font-size: 24px;
+  transition: all 0.5s ease;
+}
+
+.goal_wrap:hover{
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  margin-left: -30px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.goal_wrap.active{
+  top: -160px;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  margin-left: -40px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.bounce {
+  animation: bounce 1s .5s;
+  transform: scale(0.85);
+}
+
+@keyframes bounce {
+  0% { transform: scale(0.85); opacity: 1; }
+  50% { transform: scale(0.95); opacity: .7; }
+  60% { transform: scale(0.6); opacity: 1; }
+  80% { transform: scale(1.6) }
+  100% { transform: scale(1.1) }
 }
