@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Filtro GeoJSON Leaflet</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+	<link rel="stylesheet" href="css/footer-basic.css">
+  	<link rel="stylesheet" href="css/index.css">	
+	<style> 
+  	body {
+	    	padding: 0;
+	    	margin: 0;
+	}
+	html, body, #map {
+    		height: 95%;
+	}
+	</style> 
+</head>  
+<body onload="myFunction()">
+
+	<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+	<script src="JS/gis.js"></script>
+	
+	<div class="BarraSuperiore">
+        <a href="index"> Home </a>
+        <a href="gis"> Mappa </a>
+        <a href="timeline"> Timeline </a>
+        <a href="formdatabase"> Contribuisci al Database </a>
+        <a href="about"> About </a>
+      </div>
+
+	<div id ="map"> </div> 
+
+	<script>
+		var map = L.map('map', {
+		center: [45.242117, 11.751568],
+		zoom: 14,
+		});
+
+		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+			}).addTo(map);
+
+		var salamancaMonumental = L.layerGroup().addTo(map);
+
+	 	function colorPuntos(d) { 
+			return d == "1" ? '#FF0000' : 
+			d == "2" ? '#00FF00' : 
+			d == "4" ? '#0000FF' : 
+			d == "null" ? '#FF00FF' : '#000000'; 
+		};
+
+		function estilo_monumentos (feature) {
+			return{
+				radius: 7,
+				fillColor: colorPuntos(feature.properties.tipo_gen), 
+		   		color: colorPuntos(feature.properties.tipo_gen), 
+				weight: 1,
+				opacity : 1,
+				fillOpacity : 0.8
+			};
+		};
+
+		function popup_monumentos (feature, layer) {
+			layer.bindPopup("<div style=text-align:center><h3>"+feature.properties.title+
+		    "<h3></div><hr><table><tr><td>Ultima restaurazione: "+feature.properties.restored+
+		    "</td></tr><tr><td>Descrizione: " + feature.properties.description +
+			"</td></tr><tr><td>Bibliografia: "+feature.properties.bibliography+
+			"</td></tr></table>",
+		    {minWidth: 150, maxWidth: 200});			
+		};
+
+		var MarkerOptions = {
+		    radius: 8,
+		    fillColor: "#ff7800",
+		    color: "#000",
+		    weight: 1,
+		    opacity: 1,
+		    fillOpacity: 0.8
+		};
+
+		function myFunction() { 
+		 	var monumentos = L.geoJSON(geojson, {
+			pointToLayer: function (feature, latlng) {
+			return L.circleMarker(latlng, MarkerOptions);
+			},	
+			style:estilo_monumentos,
+			onEachFeature: popup_monumentos	
+		});		
+
+			salamancaMonumental.addLayer(monumentos);	
+	    }
+
+		function estiloSelect() {
+			var miSelect = document.getElementById("estilo").value;
+			var monumentos = L.geoJSON(geojson, {
+				pointToLayer: function (feature, latlng) {
+					return L.circleMarker(latlng, MarkerOptions);
+			},
+			filter: function(feature, layer) {								
+			if(miSelect != "tutto")		
+				return (feature.properties.tipo_gen == miSelect );
+			else
+				return true;
+		},	
+			style:estilo_monumentos,
+			onEachFeature: popup_monumentos	
+	});		
+
+		salamancaMonumental.clearLayers();
+		salamancaMonumental.addLayer(monumentos);
+	}
+	
+</script>
+
+<div class="footer-basic">
+	<footer>
+	  <ul class="list-inline">
+		<li class="list-inline-item"><a href="index">Home</a></li>
+		<li class="list-inline-item"><a href="https://www.cattaneo-mattei.edu.it/">Scuola</a></li>
+		<li class="list-inline-item"><a href="about">About</a></li>
+	  </ul>
+	  <p class="copyright" style="padding-bottom:15px">4DSA C.Cattaneo 2021</p>
+	</footer>
+</div>
+
+</body>
+</html>
