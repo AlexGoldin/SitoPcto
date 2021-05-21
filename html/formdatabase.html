@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Georeferenziazione di Monselice </title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/footer-basic.css">
+  <script src="JS/View.js" defer async></script>
+</head>
+
+<body>
+  <div class="BarraSuperiore">
+    <a href="../index"> Home </a>
+    <a href="gis"> Mappa </a>
+    <a href="timeline"> Timeline </a>
+    <a href="formdatabase"> Contribuisci al Database </a>
+    <a href="about"> About </a>
+  </div>
+
+  <div class="Wrapper">
+
+    <div class=BarraLaterale>
+      <Button class="Button" id="ButtonViewEdifici"> Form Edifici </Button>
+      <Button class="Button" id="ButtonViewMonumenti"> Form Monumenti </Button>
+      <Button class="Button" id="ButtonViewPiazze"> Form Piazze </Button>
+      <Button class="Button" id="ButtonViewReperti"> Form Reperti </Button>
+      <Button class="Button" id="ButtonViewStatue"> Form Statue </Button>
+      <Button class="Button" id="ButtonViewStrade"> Form Strade </Button>
+    </div>
+
+    <div class="InsiemePagine">
+      <div class="Edifici"  style="height: 200px;">
+        <form>
+          <input type="text" size="40" class="form-control" name="nome" id="Codice" placeholder="Codice">
+          <input type="text" size="40" class="form-control" id="Latitudine" placeholder="Latitudine">
+          <input type="text" size="40" class="form-control" id="Longitudine" placeholder="Longitudine">
+          <input type="text" size="40" class="form-control" id="Nome" placeholder="Nome">
+          <input type="text" size="40" class="form-control" id="Periodo" placeholder="Periodo">
+          <input type="text" size="40" class="form-control" id="Materiali" placeholder="Materiali">
+          <input type="text" size="40" class="form-control" id="Descrizione" placeholder="Descrizione">
+          <input type="text" size="40" class="form-control" id="Costruzione" placeholder="Data di realizzazione">
+          <input type="text" size="40" class="form-control" id="Bibliografia" placeholder="Bibliografia">
+          <input type="text" size="40" class="form-control" id="Restaurazioni" placeholder="Data di restaurazione">
+          <input type="submit" id="invia" value=" Invia " />
+          <input id="reset" type="reset" value=" Reset " />
+        </form>
+
+        <div class="Monumenti" style="display: none;">
+          <form>
+            <input type="text" size="40" class="form-control" id="Codice1" placeholder="Codice">
+            <input type="text" size="40" class="form-control" id="Latitudine1" placeholder="Latitudine">
+            <input type="text" size="40" class="form-control" id="Longitudine1" placeholder="Longitudine">
+            <input type="text" size="40" class="form-control" id="Tipologia1" placeholder="Tipologia">
+            <input type="text" size="40" class="form-control" id="Periodo1" placeholder="Periodo">
+            <input type="text" size="40" class="form-control" id="Autore1" placeholder="Autore">
+            <input type="text" size="40" class="form-control" id="Materiali1" placeholder="Materiali">
+            <input type="text" size="40" class="form-control" id="Descrizione1" placeholder="Descrizione">
+            <input type="text" size="40" class="form-control" id="Apertura1" placeholder="Data di apertura">
+            <input type="text" size="40" class="form-control" id="Stato_Conservazione1" placeholder="Stato di conservazione">
+            <input type="text" size="40" class="form-control" id="Bibliografia1" placeholder="Bibliografia">
+            <input type="submit" id="invia1" value=" Invia " />
+            <input id="reset" type="reset1" value=" Reset " />
+          </form>
+        </div>
+        
+        <div class="Piazze" style="display: none;">
+          <form>
+            <input type="text" size="40" class="form-control" id="Codice2" placeholder="Codice">
+            <input type="text" size="40" class="form-control" id="Latitudine2" placeholder="Latitudine">
+            <input type="text" size="40" class="form-control" id="Longitudine2" placeholder="Longitudine">
+            <input type="text" size="40" class="form-control" id="Periodo2" placeholder="Periodo">
+            <input type="text" size="40" class="form-control" id="Materiali2" placeholder="Materiali">
+            <input type="text" size="40" class="form-control" id="Descrizione2" placeholder="Descrizione">
+            <input type="text" size="40" class="form-control" id="Costruzione2" placeholder="Data di costruzione">
+            <input type="text" size="40" class="form-control" id="Bibliografia2" placeholder="Bibliografia">
+            <input type="text" size="40" class="form-control" id="Restauro2" placeholder="Data di restauro">
+            <input type="submit2" id="invia" value=" Invia " />
+            <input id="reset2" type="reset" value=" Reset " />
+          </form>
+        </div>
+
+        <div class="Reperti" style="display: none;">
+          <form>
+            <input type="text" size="40" class="form-control" id="Codice3" placeholder="Codice">
+            <input type="text" size="40" class="form-control" id="Latitudine3" placeholder="Latitudine">
+            <input type="text" size="40" class="form-control" id="Longitudine3" placeholder="Longitudine">
+            <input type="text" size="40" class="form-control" id="Periodo3" placeholder="Periodo">
+            <input type="text" size="40" class="form-control" id="Museo3" placeholder="Museo">
+            <input type="text" size="40" class="form-control" id="Autore3" placeholder="Autore">
+            <input type="text" size="40" class="form-control" id="Materiali3" placeholder="Materiali">
+            <input type="text" size="40" class="form-control" id="Descrizione3" placeholder="Descrizione">
+            <input type="text" size="40" class="form-control" id="Conservazione3" placeholder="Stato di conservazione">
+            <input type="text" size="40" class="form-control" id="Bibliografia3" placeholder="Bibliografia">
+            <input type="submit3" id="invia" value=" Invia " />
+            <input id="reset3" type="reset" value=" Reset " />
+          </form>
+        </div>
+
+        <div class="Statue" style="display: none;">
+          <form>
+            <input type="text" size="40" class="form-control" id="Codice4" placeholder="Codice">
+            <input type="text" size="40" class="form-control" id="Latitudine4" placeholder="Latitudine">
+            <input type="text" size="40" class="form-control" id="Longitudine4" placeholder="Longitudine">
+            <input type="text" size="40" class="form-control" id="Periodo4" placeholder="Periodo">
+            <input type="text" size="40" class="form-control" id="Museo4" placeholder="Museo">
+            <input type="text" size="40" class="form-control" id="Autore4" placeholder="Autore">
+            <input type="text" size="40" class="form-control" id="Materiali4" placeholder="Materiali">
+            <input type="text" size="40" class="form-control" id="Descrizione4" placeholder="Descrizione">
+            <input type="text" size="40" class="form-control" id="Conservazione4" placeholder="Stato di conservazione">
+            <input type="text" size="40" class="form-control" id="Bibliografia4" placeholder="Bibliografia">
+            <input type="submit4" id="invia" value=" Invia " />
+            <input id="reset4" type="reset" value=" Reset " />
+          </form>
+        </div>
+
+        <div class="Strade" style="display: none;">
+          <form>
+            <input type="text" size="40" class="form-control" id="Codice5" placeholder="Codice">
+            <input type="text" size="40" class="form-control" id="Latitudine5" placeholder="Latitudine">
+            <input type="text" size="40" class="form-control" id="Longitudine5" placeholder="Longitudine">
+            <input type="text" size="40" class="form-control" id="Periodo5" placeholder="Periodo">
+            <input type="text" size="40" class="form-control" id="Museo5" placeholder="Museo">
+            <input type="text" size="40" class="form-control" id="Autore5" placeholder="Autore">
+            <input type="text" size="40" class="form-control" id="Materiali5" placeholder="Materiali">
+            <input type="text" size="40" class="form-control" id="Descrizione5" placeholder="Descrizione">
+            <input type="text" size="40" class="form-control" id="Conservazione" placeholder="Stato di conservazione">
+            <input type="text" size="40" class="form-control" id="Bibliografia4" placeholder="Bibliografia">
+            <input type="submit5" id="invia" value=" Invia " />
+            <input id="reset5" type="reset" value=" Reset " />
+          </form>
+        </div>
+    </div>
+  </div>
+  <div class="footer-basic">
+    <footer>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="../index">Home</a></li>
+        <li class="list-inline-item"><a href="https://www.cattaneo-mattei.edu.it/">Scuola</a></li>
+        <li class="list-inline-item"><a href="about">About</a></li>
+      </ul>
+      <p class="copyright" style="padding-bottom:15px">4DSA C.Cattaneo 2021</p>
+    </footer>
+</div>
+</body>
+</html>
