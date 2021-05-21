@@ -12,7 +12,7 @@ html, body {
 }
 .BarraLaterale {
     background-color: #2c3e50;
-    width:25%;
+    width:35%;
     padding-top:50px;
     flex-direction: column;
 }
@@ -24,18 +24,12 @@ html, body {
     flex-wrap: wrap;
 }
 .form-control {
-  font-family: 'Roboto', sans-serif;
-  color: #333;
   font-size: 1.2rem;
-  margin: 0 auto;
   padding: 1.5rem 2rem;
   border-radius: 0.2rem;
-  background-color: rgb(255, 255, 255);
-  border: none;
-  width: 90%;
-  display: block;
-  border-bottom: 0.3rem solid transparent;
-  transition: all 0.3s;
+  width: 30%;
+  margin-bottom: 10px;
+  margin-right: 20px;
 }
 .Button {
     position: relative;
