@@ -3,7 +3,7 @@
 <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Filtro GeoJSON Leaflet</title>
+    <title> Georeferenziazione di Monselice </title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
 	<link rel="stylesheet" href="../css/footer-basic.css">
   	<link rel="stylesheet" href="../css/index.css">	
@@ -13,7 +13,13 @@
 	    	margin: 0;
 	}
 	html, body, #map {
-    		height: 95%;
+    		height: 90%;
+	}
+	#map {
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-top: 5%;
 	}
 	</style> 
 </head>  
@@ -68,7 +74,7 @@
 		    "</td></tr><tr><td>Descrizione: " + feature.properties.description +
 			"</td></tr><tr><td>Bibliografia: "+feature.properties.bibliography+
 			"</td></tr></table>",
-		    {minWidth: 150, maxWidth: 200});			
+		    {minWidth: 150, maxWidth: 150});			
 		};
 
 		var MarkerOptions = {
