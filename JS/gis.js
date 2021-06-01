@@ -1,7 +1,7 @@
 var geojson = {
     "type": "FeatureCollection",
-    "name": "monumenti",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+    "name": "monumenti_monselice",
+    "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
     "features": [  
     { "type": "Feature", "properties": { "coordinates n": "45.269880093495956", "coordinates e": "11.743474137962542", "time (built from)": "1201", "time (built to)": "1401", "restored": null, "title": "Reperti di un abitato palafittico", "author name": "sconosciuto", "building materials": "Pietra", "type of monument": "Resti abitazione", "state of conservation": null, "description": "Laghetto della Costa di Arqu… Petrarca sulle cui sponde nord-occidentali sono stati rinvenuti i resti dell'abitato palafitticolo", "timetable": null, "thumbnail_image": null, "image": null, "video": null, "bibliography": "Bibliotecamonselice.it" }, "geometry": { "type": "Point", "coordinates": [ 1307277.561181967612356, 5664109.120228960178792 ] } },
     { "type": "Feature", "properties": { "coordinates n": "45.269880093495956", "coordinates e": "11.743474137962542", "time (built from)": "1", "time (built to)": null, "restored": null, "title": "Suppellettili casalinghe", "author name": "sconosciuto", "building materials": "Terracotta", "type of monument": "Suppellettili", "state of conservation": null, "description": "Grandi scodelle emisferiche monoansate su peducci da cui hanno origine gruppi di cordoni verticali che si saldano, a mezzo d costolature, ad un cordone orizzontale (XVIII sec. a.C)", "timetable": null, "thumbnail_image": null, "image": null, "video": null, "bibliography": "Bibliotecamonselice.it" }, "geometry": { "type": "Point", "coordinates": [ 1307277.561181967612356, 5664109.120228960178792 ] } },
