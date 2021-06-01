@@ -71,8 +71,7 @@
 
 		function popup_monumentos (feature, layer) {
 			layer.bindPopup("<div style=text-align:center><h3>"+feature.properties.title+
-		    "<h3></div><hr><table><tr><td>Ultima restaurazione: "+feature.properties.restored+
-		    "</td></tr><tr><td>Descrizione: " + feature.properties.description +
+		    "<h3></div><hr><table><tr><td>Descrizione: " + feature.properties.description +
 			"</td></tr><tr><td>Bibliografia: "+feature.properties.bibliography+
 			"</td></tr></table>",
 		    {minWidth: 150, maxWidth: 150});			
