@@ -27,13 +27,13 @@ body {
   color: black;
 }
 .TitoloSpiegazione {
+  margin-left: 10%;
   background-color: rgb(218, 213, 213);
   height: 40%;
   width: 45%;
   font-family:'Times New Roman', Times, serif;
   color: black;
   text-align: justify;
-  margin-left: 10%;
 }
 .Immagine {
   height: 220px; 
