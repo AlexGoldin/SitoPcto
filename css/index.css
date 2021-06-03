@@ -34,9 +34,9 @@ body {
   text-align: justify;
 }
 .Immagine {
-  height: 300px;
+  height: 40%px;
   position: fixed;
   margin-left: 65%;
   margin-right: 10%;
-  margin-top: -35%;
+  margin-top: 10%;
 }
