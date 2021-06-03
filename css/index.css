@@ -15,6 +15,7 @@ body {
 .BarraSuperiore {
   background-color: black;
   overflow: hidden;
+  display: flex;
 }
 .BarraSuperiore a { 
   float: center;
@@ -41,6 +42,7 @@ body {
 .Immagine {
   height: 220px; 
   padding-left: 15%;
+  
 }
 .Immagine2 {
   height: 300px;
