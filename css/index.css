@@ -15,7 +15,7 @@ body {
   overflow: hidden;
 }
 .BarraSuperiore a { 
-  float: left;
+  float: center;
   color: white;
   text-align: center;
   padding: 15px 15px;
@@ -41,7 +41,6 @@ body {
   padding-top: 6%; 
   padding-bottom: 10%; 
   margin-right: 17%;
-
 }
 .Immagine2 {
   height: 300px;
