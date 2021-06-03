@@ -3,6 +3,7 @@ body {
   padding: 0 !important;
   width: 100%;
   height: 100%;
+  background-color: rgb(218, 213, 213);
 }
 .WrapperSito {
   background-color: rgb(218, 213, 213);
@@ -26,7 +27,7 @@ body {
   color: black;
 }
 .TitoloSpiegazione {
-  padding-top: 5%;
+  margin-left: 10%;
   background-color: rgb(218, 213, 213);
   height: 40%;
   width: 45%;
@@ -40,6 +41,7 @@ body {
   padding-top: 6%; 
   padding-bottom: 10%; 
   margin-right: 17%;
+  float: right;
 }
 .Immagine2 {
   height: 300px;
@@ -47,4 +49,5 @@ body {
   padding-top: 1%;
   padding-bottom: 10%;
   margin-right: 17%;
+  float: right;
 }
