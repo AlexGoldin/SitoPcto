@@ -36,9 +36,9 @@ html, body {
 }
 .Button {
     position: relative;
-    width: 90%;
-    height: 50px;
-    font-size: 30x;
+    width: 70%;
+    height: 40px;
+    font-size: 25x;
     color: white;
     text-align: left;
     background: #2c3e50;
