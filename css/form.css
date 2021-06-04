@@ -26,8 +26,8 @@ html, body {
     flex-wrap: wrap;
 }
 .form-control {
-  font-size: 1.2rem;
-  padding: 1.5rem 2rem;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 0.2rem;
   width: 30%;
   min-width: 30%;
@@ -36,9 +36,9 @@ html, body {
 }
 .Button {
     position: relative;
-    width: 70%;
-    height: 40px;
-    font-size: 25x;
+    width: 90%;
+    height: 50px;
+    font-size: 30x;
     color: white;
     text-align: left;
     background: #2c3e50;
